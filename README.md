@@ -52,7 +52,17 @@ For a local package stored outside the project, `manifest.json` usually looks li
 }
 ```
 
-If the package is hosted in another repository, use the corresponding Git URL instead.
+For this repository, use the Git URL directly:
+
+```json
+{
+  "dependencies": {
+    "com.vit.spawnkit": "https://github.com/vietlq0204-gif/com.vit.spawnkit.git"
+  }
+}
+```
+
+Older revisions of this repository stored the Unity package inside a nested `com.vit.spawnkit/` folder. If you are pinned to one of those revisions, append `?path=/com.vit.spawnkit` to the Git URL.
 
 ## Core Concepts
 

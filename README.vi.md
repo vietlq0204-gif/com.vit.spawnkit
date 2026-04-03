@@ -32,6 +32,36 @@ Gioi han hien tai cua package:
 - Package chua co custom editor tool. Viec setup hien duoc lam bang inspector mac dinh cua Unity.
 - Sample trong repo nay nam ngoai package, tai `Assets/SpawnModule/Sample`.
 
+## Cai dat
+
+Ban co the dung package theo 3 cach:
+
+- `Embedded package`: dat truc tiep vao `Packages/com.vit.spawnkit`
+- `Local package`: tham chieu bang `file:` tu mot thu muc nam ngoai project
+- `Git package`: tham chieu bang URL Git trong `manifest.json`
+
+Vi du local package:
+
+```json
+{
+  "dependencies": {
+    "com.vit.spawnkit": "file:../path-to/com.vit.spawnkit"
+  }
+}
+```
+
+Voi repo nay, dung truc tiep URL Git:
+
+```json
+{
+  "dependencies": {
+    "com.vit.spawnkit": "https://github.com/vietlq0204-gif/com.vit.spawnkit.git"
+  }
+}
+```
+
+Neu ban dang dung revision cu, khi package van nam trong thu muc con `com.vit.spawnkit/`, hay them `?path=/com.vit.spawnkit` vao cuoi URL Git.
+
 ## API
 
 Facade public chinh la `Vit.SpawnKit.Api.SpawnKit`.
