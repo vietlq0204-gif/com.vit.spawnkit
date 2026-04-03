@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider / IntelliJ
+.idea/
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+*.user
+*.suo
+
+# Unity project-generated folders if this package is ever opened in a full project
+Library/
+Temp/
+Obj/
+Logs/
+UserSettings/
+ProjectSettings/
